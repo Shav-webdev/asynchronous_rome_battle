@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1;
+}
+
+body {
+    background-color: #3ebfd2;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.battle_info_wrapper {
+    background-color: darkslategray;
+    border-radius: 5px;
+    border: 1px dashed #cccccc;
+}
