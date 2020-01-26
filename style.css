@@ -41,3 +41,110 @@ body {
     font-style: italic;
     color: #1f4648;
 }
+
+#winner_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: winner 8s linear;
+}
+
+#show_winner_modal .modal-content {
+    animation: winner_section 4s linear infinite;
+}
+
+#show_winner_modal button.close,
+.show_winner_text {
+    animation: winner_text 4s linear infinite;
+}
+
+@keyframes winner {
+    0% {
+        opacity: 0.25;
+        transform: scale(0.25);
+    }
+    20% {
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
+    75% {
+        opacity: 0.75;
+        transform: scale(0.75);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes winner_section {
+    0% {
+        background-color: #ffffff;
+    }
+    10% {
+        background-color: #18cccc;
+    }
+    20% {
+        background-color: #0089dd;
+    }
+    30% {
+        background-color: #ee0341;
+    }
+    40% {
+        background-color: #ffffff;
+    }
+    50% {
+        background-color: #18cccc;
+    }
+    60% {
+        background-color: #0089dd;
+    }
+    70% {
+        background-color: #ee0341;
+    }
+    80% {
+        background-color: #18cccc;
+    }
+    90% {
+        background-color: #0089dd;
+    }
+    100% {
+        background-color: #ee0341;
+    }
+}
+
+@keyframes winner_text {
+    0% {
+        color: #ff1c1a;
+    }
+    10% {
+        color: #ccb425;
+    }
+    20% {
+        color: #14dd55;
+    }
+    30% {
+        color: #ffffff;
+    }
+    40% {
+        color: #95711f;
+    }
+    50% {
+        color: #18cccc;
+    }
+    60% {
+        color: #cccccc;
+    }
+    70% {
+        color: #956d62;
+    }
+    80% {
+        color: #951e68;
+    }
+    90% {
+        color: #15ddb4;
+    }
+    100% {
+        color: #ffffff;
+    }
+}
